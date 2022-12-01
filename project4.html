@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing:border-box;
+
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            max-width: 650px;
+            margin: 0 28px;
+            padding: 28px;
+            box-shadow: 0 15px 20px rgb(0, 255, 191);
+
+        }
+        h{
+            font-size: 26px;
+            font-weight: 600;
+            text-align: left;
+            color: blue;
+            padding-bottom: 8px;
+            border-bottom: 1px solid silver;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+            box-sizing: border-box;
+            display: inline;
+        }
+        .input-box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding-bottom: 15px;
+
+        }
+        .input-box:nth child(2n){
+        justify-content:end;
+        }
+        .input-box label, .gender.title{
+            width:60%;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .gender.title{
+            font-size: 16px;
+        }
+        .button-container{
+            border: 2px solid blue;
+            height: auto;
+            align-items: center;
+            padding: 5px;
+            width:500px;
+            text-align: center;
+            background-color: blue;
+            color: blue;
+            text-size-adjust: 40px;
+        }
+       .button-container button:hover{
+        background-color:blue;
+       }
+       
+        }
+    
+    </style>
+</head>
+<head>
+    <div class="container">
+        <form action="" method="post">
+            <h2>Registration</h2><hr><hr>
+            <div class="content">
+                <div class="input-box">
+                    <div> <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" value="Enter your full name" required></div>
+
+                       <div><label for="name">User Name</label>
+                    <input type="text" id="name" name="name" value="Enter your user name" required></div>
+                   <div>
+                     <label for="email">Email</label>
+                    <input type="email" id="email" value="Enter your Email"></div>
+                   
+                    <div><label for="number">Phone number</label>
+                    <input type="tel" id="number" value="Enter your phone number"></div>
+                    
+                        <div><label for="pwd">Password</label>
+                    <input type="password" id="pwd" value="Enter your password" required></div>
+                   
+                     <div><label for="pwd">Confirm password</label>
+                    <input type="password" id="pwd" value="confirm your password"></div>
+                   <div><span class="gender.title">Gender:</span></div>
+                    <div class="gender-category">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="gender">female</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="gender">Other</label>
+                        <input type="radio" name="gender" id="Other">
+                    </div>
+
+                </div>
+
+            <div classs="alert">
+                <p>By signing up you agree to our<a href="#">Terms,</a> <a href="#">Privacy Policy,</a> and <a href="#">Cookies Policy.</a>
+                    You may receive SMS notifications from us and can opt out at any time.</p>
+            </div> 
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+
+    </div>
+</head>
+
+</html>
